@@ -12,7 +12,7 @@
 ## 1. Informe Ejecutivo {#informe-ejecutivo}
 
 ### 1.1 Resumen del Proyecto
-Sistema web de gestión y análisis de despachos de mercancía para toda Colombia. Permite visualizar, analizar y gestionar información sobre cajas, peso, costo, volumen y clientes mediante dashboards interactivos.
+Aplicacion en Android de gestión y análisis de despachos de mercancía para toda Colombia. Permite visualizar, analizar y gestionar información sobre cajas, peso, costo, volumen y clientes mediante dashboards interactivos.
 
 ### 1.2 Objetivo Principal
 Desarrollar una aplicación web que permita medir y analizar la totalidad de mercancía despachada hacia toda Colombia, proporcionando visualizaciones gráficas y herramientas de análisis para la toma de decisiones.
@@ -69,7 +69,7 @@ Desarrollar una aplicación web que permita medir y analizar la totalidad de mer
 - Validación de formato de archivo
 - Confirmación de carga exitosa
 
-**Tipos de archivo aceptados**: (Por definir - CSV, Excel, etc.)
+**Tipos de archivo aceptados**: (CSV)
 
 #### 2.1.3 Panel de Configuración
 **Descripción**: Panel de configuración personal del usuario
@@ -119,7 +119,6 @@ Desarrollar una aplicación web que permita medir y analizar la totalidad de mer
 ### 2.3 Sistema de Autenticación
 - **Login con credenciales** (usuario y contraseña)
 - **Tokens JWT** para sesiones
-- **No se requiere** recuperación de contraseña (fase inicial)
 - **No hay integración** con sistemas de autenticación externos
 
 ---
@@ -129,7 +128,7 @@ Desarrollar una aplicación web que permita medir y analizar la totalidad de mer
 ### 3.1 Arquitectura del Sistema
 
 #### 3.1.1 Frontend
-**Tecnología**: React Native (Web)
+**Tecnología**: React Native
 
 **Características**:
 - Interfaz responsiva
@@ -294,7 +293,6 @@ CREATE TABLE data_uploads (
 - Hashing de contraseñas (bcrypt)
 - Validación de entrada de datos
 - Protección contra SQL Injection
-- HTTPS en producción
 - Control de acceso basado en roles (RBAC)
 
 #### 3.2.3 Escalabilidad
@@ -338,7 +336,6 @@ CREATE TABLE data_uploads (
 ❌ Integración con sistemas externos de autenticación
 ❌ Notificaciones por email
 ❌ Exportación de reportes a PDF/Excel
-❌ Versión móvil nativa
 ❌ Modo offline
 ❌ Análisis predictivo con IA/ML
 ❌ Integración con APIs externas
@@ -355,7 +352,6 @@ CREATE TABLE data_uploads (
 
 #### 4.3.1 Supuestos
 - Los archivos de datos vendrán en formato estructurado
-- Los usuarios tendrán acceso a navegadores modernos
 - La conexión a internet será estable
 - Los datos no requerirán procesamiento complejo en tiempo real
 
@@ -661,88 +657,12 @@ Una historia de usuario se considera "Hecha" cuando:
 ### 5.7 Herramientas de Gestión
 
 **Control de Versiones**:
-- Git + GitHub/GitLab
-
-**Gestión de Tareas**:
-- Trello / Jira / Notion
-- Tablero Kanban con columnas:
-  - Backlog
-  - To Do
-  - In Progress
-  - Testing
-  - Done
+- Git + GitHub
 
 **Documentación**:
 - Markdown para documentación técnica
 - Comentarios en código
 - README actualizado
-
-### 5.8 Registro de Progreso
-
-**Documentar en cada sprint**:
-- Velocidad del sprint (historias completadas)
-- Horas reales vs estimadas
-- Problemas encontrados y soluciones
-- Decisiones técnicas importantes
-- Lecciones aprendidas
-
-**Formato de Registro**:
-```markdown
-## Sprint X - [Nombre]
-**Fecha**: DD/MM/YYYY - DD/MM/YYYY
-**Objetivo**: [Descripción]
-
-### Historias Completadas
-- [x] US-XXX: Descripción (Horas: estimadas/reales)
-
-### Problemas Encontrados
-- Problema 1: [Descripción y solución]
-
-### Decisiones Técnicas
-- Decisión 1: [Descripción y justificación]
-
-### Lecciones Aprendidas
-- Lección 1: [Descripción]
-
-### Próximos Pasos
-- Acción 1
-- Acción 2
-```
-
----
-
-## 6. Anexos
-
-### 6.1 Glosario de Términos
-
-- **Dashboard**: Panel de control visual
-- **JWT**: JSON Web Token (sistema de autenticación)
-- **CRUD**: Create, Read, Update, Delete
-- **API REST**: Interfaz de programación de aplicaciones basada en REST
-- **Sprint**: Iteración de desarrollo (1-2 semanas)
-- **User Story**: Historia de usuario que describe una funcionalidad
-
-### 6.2 Referencias Técnicas
-
-**React Native**:
-- Documentación oficial: https://reactnative.dev/
-
-**Flask**:
-- Documentación oficial: https://flask.palletsprojects.com/
-
-**Django REST Framework**:
-- Documentación oficial: https://www.django-rest-framework.org/
-
-**MySQL**:
-- Documentación oficial: https://dev.mysql.com/doc/
-
-### 6.3 Contacto y Soporte
-
-**Desarrollador**: [Tu Nombre]
-**Email**: [Tu Email]
-**Repositorio**: [URL del repositorio Git]
-
----
 
 **Fecha de creación**: 03/11/2025
 **Última actualización**: 09/11/2025
