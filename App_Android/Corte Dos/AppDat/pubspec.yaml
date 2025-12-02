@@ -1,0 +1,61 @@
+name: envii
+description: Sistema de Gestión y Análisis de Despachos
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # UI y Material Design
+  cupertino_icons: ^1.0.6
+  material_design_icons_flutter: ^7.0.7296
+  google_fonts: ^6.1.0
+  
+  # Navegación
+  go_router: ^17.0.0
+  
+  # Estado y almacenamiento
+  provider: ^6.1.1
+  shared_preferences: ^2.2.2
+  
+  # HTTP y API
+  http: ^1.1.2
+  dio: ^5.4.0
+  
+  # Gráficos
+  fl_chart: ^1.1.1
+
+  # Selección de archivos
+  file_picker: ^10.3.7
+
+  # Utilidades
+  intl: ^0.20.2
+  path_provider: ^2.1.1
+  sqflite: ^2.3.0
+  sqflite_common_ffi: ^2.3.0
+  sqflite_common_ffi_web: ^1.1.0
+  path: ^1.8.3
+  csv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/datos V3.csv
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_icon.png"
+
