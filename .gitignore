@@ -27,7 +27,7 @@ migrate_working_dir/
 *.idea/libraries
 *.idea/shelf
 *.idea/modules.xml
-*.idea/*.iml
+*.idea/*.iml 
 *.idea/modules
 
 # VS Code related
